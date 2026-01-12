@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* keeps content readable on wide screens */
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* simple header separation */
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+/* nav layout – logo left, links right */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #2c6bed;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c6bed;
+  transition: color 0.2s;
+}
+
+/* hover feedback only */
+nav a:hover {
+  color: #1e4fbf;
+}
+
+/* spacing between sections */
+section {
+  margin-bottom: 48px; /* 40 felt tight */
+}
+
+/* work items need separation */
+#work article {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  transition: transform 0.2s;
+}
+
+#work article:hover {
+  transform: translateY(-3px);
+}
+
+/* form layout – stacked and simple */
+form {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px;
+  background-color: #2c6bed;
+  color: #fff;
+  border: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1e4fbf;
+  transform: translateY(-2px);
+}
+
+/* footer separation */
+footer {
+  border-top: 1px solid #ccc;
+}
